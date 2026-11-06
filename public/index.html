@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filo Barber Club · Paraná — Sitio de demostración</title>
+  <meta name="description" content="Barbería en Paraná. Cortes, barba y color. Sacá tu turno en 3 toques por WhatsApp. (Sitio de demostración)">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Web para barberías: turnos en 3 toques y club mensual">
+  <meta property="og:description" content="Demo de web con turnero por WhatsApp, club de suscripción y asistente virtual para barberías de Paraná.">
+  <meta property="og:image" content="https://barberia-demo-ydk.pages.dev/assets/img/og.jpg?v=3">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23ffd400'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='36' fill='%230a0a0a'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="/assets/fonts/anton-b9beea0804.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/space-mono-d0c504bd8f.woff2" as="font" type="font/woff2" crossorigin>
+  <style data-fuentes>
+@font-face { font-family: 'Anton'; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/anton-3ada4101c3.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Anton'; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/anton-b9beea0804.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/inter-cf3eb50fb2.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/inter-f11d729bb0.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url(/assets/fonts/inter-cf3eb50fb2.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url(/assets/fonts/inter-f11d729bb0.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url(/assets/fonts/inter-cf3eb50fb2.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url(/assets/fonts/inter-f11d729bb0.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Space Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/space-mono-68c6b8516d.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Space Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/space-mono-e2ee2d370f.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Space Mono'; font-style: normal; font-weight: 700; font-display: swap; src: url(/assets/fonts/space-mono-646b6f2792.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Space Mono'; font-style: normal; font-weight: 700; font-display: swap; src: url(/assets/fonts/space-mono-d0c504bd8f.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  </style>
+  <link rel="stylesheet" href="lib/kit.css?v=20261021">
+  <link rel="stylesheet" href="styles.css?v=20261028a">
+</head>
+<body>
+  <a class="skip-link" href="#turno">Saltar al turnero</a>
+  <div class="k-progreso" aria-hidden="true"></div>
+  <div class="demo-bar" role="note">SITIO DE DEMOSTRACIÓN · PRECIOS Y DATOS DE EJEMPLO</div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#inicio">FILO<span>/</span>BARBER CLUB</a>
+      <nav class="nav-links" aria-label="Principal"><a href="#servicios">Servicios</a><a href="#club">Club</a><a href="#turno">Turnos</a><a href="#preguntas">Preguntas</a></nav>
+      <a class="btn btn-y btn-sm" href="#turno">Sacar turno</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="mono">[01] PARANÁ · ENTRE RÍOS</p>
+          <h1 class="hero-title">CORTE<br>FRESCO.<br><span class="y">CERO VUELTAS.</span></h1>
+          <p class="hero-sub">Sacá tu turno en 3 toques, a cualquier hora. Elegís servicio, barbero y horario, y te confirmamos por WhatsApp.</p>
+          <div class="hero-actions">
+            <a class="btn btn-y" href="#turno">Sacar turno →</a>
+            <button class="btn btn-line" type="button" data-open-chat>Preguntar algo</button>
+          </div>
+          <ul class="datos" aria-label="La barbería en números">
+            <li><b>3</b><span>toques para tu turno</span></li>
+            <li><b>2</b><span>barberos: Nico y Fede</span></li>
+            <li><b>$20K</b><span>club mensual</span></li>
+            <li><b>24 H</b><span>el bot responde</span></li>
+          </ul>
+        </div>
+        <figure class="hero-photo">
+          <img src="assets/img/barberia.webp" alt="Interior de una barbería clásica en blanco y negro" width="1024" height="803" fetchpriority="high">
+          <figcaption class="mono">FOTO ILUSTRATIVA</figcaption>
+        </figure>
+      </div>
+      <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>CORTE · BARBA · FADE · COLOR · NAVAJA · CLUB · </span><span>CORTE · BARBA · FADE · COLOR · NAVAJA · CLUB · </span></div></div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="container">
+        <p class="mono">[02] SERVICIOS</p>
+        <h2 class="section-title">LO QUE <span class="y">HACEMOS</span></h2>
+        <div class="grid-list">
+          <div class="row"><span class="r-n">01</span><h3>Corte</h3><span class="r-meta">40 MIN</span><span class="r-price">$ 9.000</span></div>
+          <div class="row"><span class="r-n">02</span><h3>Corte + barba</h3><span class="r-meta">60 MIN</span><span class="r-price">$ 12.500</span></div>
+          <div class="row"><span class="r-n">03</span><h3>Perfilado de barba</h3><span class="r-meta">25 MIN</span><span class="r-price">$ 5.500</span></div>
+          <div class="row"><span class="r-n">04</span><h3>Color / decoloración</h3><span class="r-meta">90 MIN</span><span class="r-price">desde $ 25.000</span></div>
+          <div class="row"><span class="r-n">05</span><h3>Corte kids (hasta 12)</h3><span class="r-meta">30 MIN</span><span class="r-price">$ 7.500</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-y" id="club">
+      <div class="container club">
+        <div>
+          <p class="mono">[03] FILO CLUB</p>
+          <h2 class="section-title dark">SIEMPRE<br>PROLIJO.<br>PRECIO FIJO.</h2>
+        </div>
+        <div class="club-card">
+          <p class="club-price">$ 20.000<span>/MES</span></p>
+          <ul class="club-list">
+            <li>2 cortes por mes</li>
+            <li>Perfilado de barba ilimitado</li>
+            <li>Prioridad en turnos de sábado</li>
+            <li>10% en productos</li>
+          </ul>
+          <a class="btn btn-dark btn-block" href="#" data-club>Quiero sumarme al club</a>
+          <p class="club-fine">Plan de ejemplo. Se renueva cada mes, cancelás cuando quieras.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="turno">
+      <div class="container turno-grid">
+        <div>
+          <p class="mono">[04] TURNOS</p>
+          <h2 class="section-title">SACÁ TU <span class="y">TURNO</span></h2>
+          <p class="lead">Elegís y te abrimos WhatsApp con todo escrito. Te confirmamos el horario en minutos.</p>
+          <figure class="side-photo"><img src="assets/img/sillon.webp" alt="Detalle de un sillón de barbería" width="683" height="1024" loading="lazy" decoding="async"></figure>
+        </div>
+        <form class="turno" data-turno novalidate>
+          <fieldset class="step"><legend><span>1</span> Servicio</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="servicio" value="Corte" checked><span>Corte</span></label>
+              <label class="opt"><input type="radio" name="servicio" value="Corte + barba"><span>Corte + barba</span></label>
+              <label class="opt"><input type="radio" name="servicio" value="Perfilado de barba"><span>Barba</span></label>
+              <label class="opt"><input type="radio" name="servicio" value="Color / decoloración"><span>Color</span></label>
+              <label class="opt"><input type="radio" name="servicio" value="Corte kids"><span>Kids</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="step"><legend><span>2</span> Barbero</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="barbero" value="el que esté libre" checked><span>El que esté libre</span></label>
+              <label class="opt"><input type="radio" name="barbero" value="Nico"><span>Nico</span></label>
+              <label class="opt"><input type="radio" name="barbero" value="Fede"><span>Fede</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="step"><legend><span>3</span> Día y horario</legend>
+            <div class="opts" data-days>
+              <label class="opt"><input type="radio" name="dia" value="hoy" checked><span>Hoy</span></label>
+              <label class="opt"><input type="radio" name="dia" value="mañana"><span>Mañana</span></label>
+              <label class="opt"><input type="radio" name="dia" value="esta semana"><span>Esta semana</span></label>
+            </div>
+            <div class="opts opts-time">
+              <label class="opt"><input type="radio" name="hora" value="10:00"><span>10:00</span></label>
+              <label class="opt"><input type="radio" name="hora" value="12:00"><span>12:00</span></label>
+              <label class="opt"><input type="radio" name="hora" value="15:00"><span>15:00</span></label>
+              <label class="opt"><input type="radio" name="hora" value="17:00" checked><span>17:00</span></label>
+              <label class="opt"><input type="radio" name="hora" value="19:00"><span>19:00</span></label>
+            </div>
+          </fieldset>
+          <div class="field"><label for="t-nombre">Tu nombre</label><input id="t-nombre" name="nombre" autocomplete="given-name" required></div>
+          <p class="form-error" data-form-error hidden>Poné tu nombre para reservar.</p>
+          <button class="btn btn-y btn-block" type="submit">CONFIRMAR POR WHATSAPP →</button>
+          <p class="fine">Horarios de referencia: la barbería te confirma disponibilidad.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="preguntas">
+      <div class="container">
+        <p class="mono">[05] PREGUNTAS</p>
+        <h2 class="section-title">LO QUE <span class="y">PREGUNTAN</span></h2>
+        <div class="k-faq">
+          <details data-k><summary>¿Atienden sin turno?</summary><p>Si hay un hueco, sí. Pero con turno no esperás: lo sacás en 3 toques desde acá.</p></details>
+          <details data-k><summary>¿Cómo funciona el club?</summary><p>Pagás una cuota por mes y tenés 2 cortes, perfilado de barba cuando quieras y prioridad los sábados. Se renueva solo y lo cancelás cuando quieras.</p></details>
+          <details data-k><summary>¿Puedo cambiar o cancelar el turno?</summary><p>Sí: avisanos por WhatsApp con un par de horas de anticipación y lo movemos.</p></details>
+          <details data-k><summary>¿Cómo pago?</summary><p>Efectivo, transferencia o Mercado Pago. El club se paga una vez por mes.</p></details>
+          <details data-k><summary>¿Hacen color y decoloración?</summary><p>Sí, con turno de 90 minutos. El precio depende del largo y del color: te lo decimos antes de arrancar.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="k-contacto" id="contacto">
+      <div class="k-in">
+        <p class="mono">[06] CONTACTO</p>
+        <h2 data-k><span>TU MEJOR CORTE</span> <span class="y">TE ESPERA.</span></h2>
+        <p data-k>Escribinos por WhatsApp o Instagram. Lunes a sábados de 10 a 20 h, en el centro de Paraná.</p>
+        <div class="k-botones" data-k>
+          <a class="k-btn k-btn-wa" href="#" data-wa-contacto><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg>ESCRIBINOS POR WHATSAPP</a>
+          <a class="k-btn k-btn-ig" href="https://www.instagram.com/ydk.exe/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>SEGUINOS EN INSTAGRAM</a>
+        </div>
+        <ul class="k-chips" data-k aria-label="Formas de pago">
+          <li>EFECTIVO</li><li>TRANSFERENCIA</li><li>MERCADO PAGO</li><li>CLUB MENSUAL</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="mono">© 2026 FILO BARBER CLUB · DEMO · LUN A SÁB 10 A 20 H</p>
+      <p>¿Tenés una barbería y querés una web así? <a href="#" data-maker>Hablemos</a></p>
+    </div>
+    <p class="container credits">Fotos: <a href="https://www.rawpixel.com/image/14265679/negro-barbershop-interior-atlanta-walker-evans" target="_blank" rel="noopener">“Barbershop Interior, Atlanta”</a> por Walker Evans / The Getty (CC0) · <a href="https://www.flickr.com/photos/12508217@N08/4983693041" target="_blank" rel="noopener">“Barber Shop Chair Detail”</a> por Sam Howzit (CC BY 2.0).</p>
+  </footer>
+
+  <button class="chat-fab k-fab" type="button" data-open-chat data-k-tip="¿Turno para hoy? Preguntame ✂" aria-label="¿Dudas? Abrir el asistente">¿Dudas? <span aria-hidden="true">✂</span></button>
+  <section class="chat" data-chat hidden aria-label="Asistente de la barbería">
+    <header class="chat-head"><div><p class="chat-name">FILO BOT</p><p class="chat-status">● Responde al instante</p></div><button class="chat-close" type="button" data-close-chat aria-label="Cerrar">×</button></header>
+    <div class="chat-log" data-chat-log aria-live="polite"><p class="msg msg-bot">¡Buenas! ✂ Soy el asistente de Filo. Te cuento precios, horarios y cómo funciona el club. ¿Qué querés hacerte?</p></div>
+    <div class="chat-suggest" data-chat-suggest><button type="button">¿Cuánto sale corte y barba?</button><button type="button">¿Cómo funciona el club?</button><button type="button">¿Atienden sin turno?</button></div>
+    <form class="chat-form" data-chat-form><label class="sr-only" for="chat-input">Escribí tu consulta</label><input id="chat-input" autocomplete="off" maxlength="500" placeholder="Escribí tu consulta…"><button type="submit" aria-label="Enviar">→</button></form>
+    <a class="chat-wa" href="#turno">SACAR TURNO</a>
+  </section>
+
+  <script defer src="lib/manifest.js?v=20261018"></script>
+  <script defer src="lib/chat.js?v=20261018"></script>
+  <script defer src="lib/kit.js?v=20261021"></script>
+  <script defer src="main.js?v=20261021"></script>
+</body>
+</html>
